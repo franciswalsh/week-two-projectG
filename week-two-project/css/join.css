@@ -15,6 +15,8 @@ fieldset {
 .text_input {
   display: flex;
   flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .text_input input {
   height: 2.5em;
@@ -65,13 +67,22 @@ fieldset {
   .check {
     width: 50%;
   }
+  #join_input input {
+    padding: 3%;
+    font-size: 1.5em;
+  }
 }
 @media screen and (min-width: 769px){
+
+  #picture_input {
+    width: 35%;
+  }
 
   #text_inputs {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    width: 65%;
   }
   #name_and_email{
     width: 45%;
@@ -80,5 +91,17 @@ fieldset {
   #password_and_password {
     width: 45%;
     /*margin: 0;*/
+  }
+  #checkboxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .check {
+    width: 33%;
+  }
+  #join_input input {
+    padding: 3%;
+    font-size: 2em;
   }
 }
