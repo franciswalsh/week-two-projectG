@@ -148,13 +148,15 @@ nav a {
   #nav_item_footer3, #nav_item_footer2, #nav_item_footer1 {
     width: 33.3333%;
     height: 100%;
-  }*/
+  }
 }
+
 @media screen and (min-width: 769px){
 
   #featured_and_other {
     display: flex;
     justify-content: space-around;
+    flex-wrap: nowrap;
   }
   #featured_film {
     width: 45%;
