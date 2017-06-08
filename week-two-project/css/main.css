@@ -1,0 +1,195 @@
+/*
+text: #0B1942
+inline link: #00B7D3
+h2 background: #0B1942
+h2 color: #FFFFFF
+logo background: #F5005B
+navigation background: #7DDFE8
+navigation link color: #FFFFFF
+"Home" nav link background: #00A5BF
+"Calendar" nav link background: #00B7D3
+"Join" nav link background: #00D5E7
+"Up Next" background: #0B1942
+"Up Next" card background #E2E2E2
+calendar background and treatments: #0B1942
+calendar highlighted day: #F5005B
+button background: #F5005B
+copyright text: #FFFFFF
+*/
+body {
+  margin: 0;
+  font-family: 'PT Sans'
+}
+#all_content {
+  padding: 0;
+}
+header {
+  display: flex;
+}
+#header_photo {
+  background-color: #F5005B;
+  flex-grow: 1;
+  justify-content: center;
+}
+#header_photo img {
+  padding: 2%;
+  width: 95%;
+}
+.nav_row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  flex-grow: 3;
+}
+#nav_item1 {
+  background-color: #00A5BF;
+  height: 33.3333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#nav_item2 {
+  background-color: #00B7D3;
+  height: 33.3333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#nav_item3 {
+  background-color: #00D5E7;
+  height: 33.3333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav a {
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-around;
+}
+#subfooter {
+  background-color: #7BDFE8;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  height: 40%;
+  margin: 0;
+}
+#subfooter p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  text-align: center;
+}
+#nav_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60%;
+  width: 100%;
+  margin: 0;
+}
+#nav_item_footer1 {
+  background-color: #00A5BF;
+  height: 33.3333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+#nav_item_footer2 {
+  background-color: #00B7D3;
+  height: 33.3333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+#nav_item_footer3 {
+  background-color: #00D5E7;
+  height: 33.3333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+@media screen and (min-width: 545px){
+  header {
+    background-color: #7BDFE8;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .nav_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 35%;
+  }
+  #nav_item1, #nav_item2, #nav_item3 {
+    height: 100%;
+    width: 33.3333%;
+  }
+  #sub_content_container {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+  }
+  #nav_column {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #subfooter {
+    width: 55%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #sub_footer p {
+    /*height: 100%;*/
+  }
+  #nav_item_footer3, #nav_item_footer2, #nav_item_footer1 {
+    width: 33.3333%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 769px){
+
+  header {
+    height: 150px;
+  }
+  #header_photo {
+    width: 30%;
+  }
+  #header_photo img {
+    width: 95%;
+    height: 95%;
+  }
+  .nav_row {
+    margin-right: 60%;
+  }
+  footer {
+    justify-content: flex-start;
+  }
+  #nav_column {
+    width: 35%;
+  }
+  #subfooter {
+    width: 65%;
+  }
